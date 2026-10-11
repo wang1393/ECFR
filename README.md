@@ -108,8 +108,8 @@ The works above explore unified feature reconstruction, multimodal memory banks,
 The experiments in the paper use PyTorch 1.13. Install a compatible CUDA-enabled PyTorch and torchvision pair, then install the remaining dependencies:
 
 ```bash
-git clone https://github.com/wang1393/An-Efficient-Cross-modal-Feature-Reconstruction-Model-for-Multimodal-Multi-class-Anomaly-Detection.git
-cd An-Efficient-Cross-modal-Feature-Reconstruction-Model-for-Multimodal-Multi-class-Anomaly-Detection
+git clone https://github.com/wang1393/ECFR.git
+cd ECFR
 pip install -r requirements.txt
 ```
 
