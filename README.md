@@ -118,7 +118,7 @@ For questions, please send an email to [120242227180@ncepu.edu.cn](mailto:120242
 
 ## Acknowledgements
 
-We thank all of the reviewers for their constructive feedback during the review of our submission. We also thank the NeurIPS 2026 area chair (AC) for guiding the discussion, and the senior area chairs (SACs) and program chairs (PCs) for overseeing the review process. The review helped us improve the paper.
+We thank all of the reviewers for their constructive feedback during the review of our submission. We also thank the NeurIPS 2026 area chair (AC) for guiding the discussion and providing helpful suggestions. Their feedback and guidance helped us improve the paper. We are grateful to the senior area chairs (SACs) and program chairs (PCs) for overseeing the review process.
 
 We appreciate the following GitHub repositories for their valuable code:
 
