@@ -118,7 +118,7 @@ For questions, please send an email to [120242227180@ncepu.edu.cn](mailto:120242
 
 ## Acknowledgements
 
-We thank all of the reviewers for their constructive feedback and the NeurIPS 2026 Area Chair for thoughtful guidance, which together helped improve our paper.
+We thank all of the reviewers for their constructive comments and the Area Chair for helpful guidance during the review of our submission. Both helped us improve the paper.
 
 We appreciate the following GitHub repositories for their valuable code:
 
