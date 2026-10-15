@@ -56,7 +56,7 @@ $$
 \right].
 $$
 
-Here, $x^m$ and $x^{\bar m}$ are paired inputs from two modalities. $F_{\mathrm{cross}}/F_{\mathrm{single}}$ denote cross-modal/same-modal reconstruction, with expectations taken over normal or anomalous data. $\Delta_{\mathrm{hetero}}>0$ captures the heterogeneity cost, and $\kappa>1$ characterizes the amplification of reconstruction errors on anomalous samples relative to normal samples.
+Here, $x^m$ and $x^{\bar m}$ are paired inputs from two modalities. $F_{\mathrm{cross}}/F_{\mathrm{single}}$ denote cross-modal/same-modal reconstruction. $\Delta_{\mathrm{hetero}}>0$ captures the heterogeneity cost, and $\kappa>1$ characterizes the amplification of reconstruction errors on anomalous samples relative to normal samples.
 
 As shown in the figure below, ECFR implements this idea through two interacting cross-modal reconstruction pathways. **AFIR** learns intra-modal and inter-modal dependencies from normal samples. These interactions provide a route for anomaly signals to propagate between the pathways. **HAC** jointly models global and local structure, allowing propagated deviations to produce more pronounced reconstruction errors.
 
