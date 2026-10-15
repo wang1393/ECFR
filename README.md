@@ -23,21 +23,21 @@ In multi-class anomaly detection, a single model must learn normal patterns acro
 This idea rests on two hypotheses. First, modality heterogeneity introduces an additional cost when reconstructing one modality from another. Second, when the model learns this process from normal data alone, anomalous inputs may further increase reconstruction errors. We express these hypotheses through two inequalities and test them empirically in the appendix:
 
 $$
-\mathbb{E}_{P_{\mathrm{norm}}}
-\left[\left\|F_{\mathrm{cross}}(x^{\bar m})-x^m\right\|_2^2\right]
+\mathbb{E}_{\mathcal{P}_{\mathrm{norm}}}
+\left[\left\|\mathcal{F}_{\mathrm{cross}}(\mathbf{x}^{\bar m})-\mathbf{x}^{m}\right\|_{2}^{2}\right]
 \geq
-\mathbb{E}_{P_{\mathrm{norm}}}
-\left[\left\|F_{\mathrm{single}}(x^m)-x^m\right\|_2^2\right]
+\mathbb{E}_{\mathcal{P}_{\mathrm{norm}}}
+\left[\left\|\mathcal{F}_{\mathrm{single}}(\mathbf{x}^{m})-\mathbf{x}^{m}\right\|_{2}^{2}\right]
 +\Delta_{\mathrm{hetero}},
 $$
 
 $$
-\mathbb{E}_{P_{\mathrm{anom}}}
-\left[\left\|F_{\mathrm{cross}}(x^m)-x^{\bar m}\right\|_2^2\right]
+\mathbb{E}_{\mathcal{P}_{\mathrm{anom}}}
+\left[\left\|\mathcal{F}_{\mathrm{cross}}(\mathbf{x}^{m})-\mathbf{x}^{\bar m}\right\|_{2}^{2}\right]
 \geq
-\kappa\,
-\mathbb{E}_{P_{\mathrm{norm}}}
-\left[\left\|F_{\mathrm{cross}}(x^m)-x^{\bar m}\right\|_2^2\right].
+\kappa\cdot
+\mathbb{E}_{\mathcal{P}_{\mathrm{norm}}}
+\left[\left\|\mathcal{F}_{\mathrm{cross}}(\mathbf{x}^{m})-\mathbf{x}^{\bar m}\right\|_{2}^{2}\right],
 $$
 
 Here, $x^m$ and $x^{\bar m}$ are paired inputs from two modalities. $F_{\mathrm{cross}}/F_{\mathrm{single}}$ denote cross-modal/same-modal reconstruction, with expectations taken over normal or anomalous data. $\Delta_{\mathrm{hetero}}>0$ captures the heterogeneity cost, and $\kappa>1$ characterizes the amplification of reconstruction errors on anomalous samples relative to normal samples.
