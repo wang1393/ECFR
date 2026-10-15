@@ -24,20 +24,36 @@ This idea rests on two hypotheses. First, modality heterogeneity introduces an a
 
 $$
 \mathbb{E}_{\mathcal{P}_{\mathrm{norm}}}
-\left[\left\|\mathcal{F}_{\mathrm{cross}}(\mathbf{x}^{\bar m})-\mathbf{x}^{m}\right\|_{2}^{2}\right]
+\left[
+\left\lVert
+\mathcal{F}_{\mathrm{cross}}(\mathbf{x}^{\bar m})-\mathbf{x}^{m}
+\right\rVert_{2}^{2}
+\right]
 \geq
 \mathbb{E}_{\mathcal{P}_{\mathrm{norm}}}
-\left[\left\|\mathcal{F}_{\mathrm{single}}(\mathbf{x}^{m})-\mathbf{x}^{m}\right\|_{2}^{2}\right]
+\left[
+\left\lVert
+\mathcal{F}_{\mathrm{single}}(\mathbf{x}^{m})-\mathbf{x}^{m}
+\right\rVert_{2}^{2}
+\right]
 +\Delta_{\mathrm{hetero}},
 $$
 
 $$
 \mathbb{E}_{\mathcal{P}_{\mathrm{anom}}}
-\left[\left\|\mathcal{F}_{\mathrm{cross}}(\mathbf{x}^{m})-\mathbf{x}^{\bar m}\right\|_{2}^{2}\right]
+\left[
+\left\lVert
+\mathcal{F}_{\mathrm{cross}}(\mathbf{x}^{m})-\mathbf{x}^{\bar m}
+\right\rVert_{2}^{2}
+\right]
 \geq
 \kappa\cdot
 \mathbb{E}_{\mathcal{P}_{\mathrm{norm}}}
-\left[\left\|\mathcal{F}_{\mathrm{cross}}(\mathbf{x}^{m})-\mathbf{x}^{\bar m}\right\|_{2}^{2}\right],
+\left[
+\left\lVert
+\mathcal{F}_{\mathrm{cross}}(\mathbf{x}^{m})-\mathbf{x}^{\bar m}
+\right\rVert_{2}^{2}
+\right].
 $$
 
 Here, $x^m$ and $x^{\bar m}$ are paired inputs from two modalities. $F_{\mathrm{cross}}/F_{\mathrm{single}}$ denote cross-modal/same-modal reconstruction, with expectations taken over normal or anomalous data. $\Delta_{\mathrm{hetero}}>0$ captures the heterogeneity cost, and $\kappa>1$ characterizes the amplification of reconstruction errors on anomalous samples relative to normal samples.
