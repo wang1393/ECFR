@@ -18,16 +18,34 @@ Official implementation of **An Efficient Cross-modal Feature Reconstruction Mod
 
 ## Overview
 
-**Efficient Cross-modal Feature Reconstruction (ECFR)** detects and localizes anomalies across multiple object categories using a single model trained on normal RGB–depth pairs. A shared, frozen ResNet-34 extracts multi-scale features, and two decoding pathways reconstruct RGB features from depth and depth features from RGB. Cross-modal reconstruction exploits inter-modal heterogeneity to alleviate the “identical shortcut” problem, in which anomalous features can also be well reconstructed.
+In multi-class anomaly detection, a single model must learn normal patterns across multiple object categories. Yet greater reconstruction capacity can also allow anomalies to be reconstructed successfully. This is the *identical shortcut* problem. **Modality differences make cross-modal reconstruction more difficult. Can this difficulty help alleviate the identical shortcut?** Motivated by this question, ECFR explores how to exploit the inherent difficulty of cross-modal reconstruction to make anomalies harder to reconstruct while learning normal patterns across categories.
 
-ECFR has two core modules:
+This idea rests on two hypotheses. First, modality heterogeneity introduces an additional cost when reconstructing one modality from another. Second, when the model learns this process from normal data alone, anomalous inputs may further increase reconstruction errors. We express these hypotheses through two inequalities and test them empirically in the appendix:
 
-- **Adaptive Feature Interaction and Recalibration (AFIR)** models intra- and inter-modal dependencies and adaptively recalibrates feature channels.
-- **Hybrid Attention Convolution (HAC)** combines [Agent Attention](https://github.com/LeapLabTHU/Agent-Attention) with parallel multi-kernel depth-wise convolutions to model global dependencies and local structures during reconstruction.
+$$
+\mathbb{E}_{P_{\mathrm{norm}}}
+\left[\left\|F_{\mathrm{cross}}(x^{\bar m})-x^m\right\|_2^2\right]
+\geq
+\mathbb{E}_{P_{\mathrm{norm}}}
+\left[\left\|F_{\mathrm{single}}(x^m)-x^m\right\|_2^2\right]
++\Delta_{\mathrm{hetero}},
+$$
 
-At inference, cosine discrepancies between cross-modally reconstructed features and the corresponding encoder features are used to produce anomaly maps and image-level anomaly scores.
+$$
+\mathbb{E}_{P_{\mathrm{anom}}}
+\left[\left\|F_{\mathrm{cross}}(x^m)-x^{\bar m}\right\|_2^2\right]
+\geq
+\kappa\,
+\mathbb{E}_{P_{\mathrm{norm}}}
+\left[\left\|F_{\mathrm{cross}}(x^m)-x^{\bar m}\right\|_2^2\right].
+$$
+
+Here, $x^m$ and $x^{\bar m}$ are paired inputs from two modalities. $F_{\mathrm{cross}}/F_{\mathrm{single}}$ denote cross-modal/same-modal reconstruction, with expectations taken over normal or anomalous data. $\Delta_{\mathrm{hetero}}>0$ captures the heterogeneity cost, and $\kappa>1$ characterizes the amplification of reconstruction errors on anomalous samples relative to normal samples.
+
+As shown in the figure below, ECFR implements this idea through two interacting cross-modal reconstruction pathways. **AFIR** learns intra-modal and inter-modal dependencies from normal samples. These interactions provide a route for anomaly signals to propagate between the pathways. **HAC** jointly models global and local structure, allowing propagated deviations to produce more pronounced reconstruction errors.
 
 ![Overall framework of ECFR](figures/ecfr_framework.png)
+
 
 ## Closely Related Work
 
