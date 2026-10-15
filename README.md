@@ -69,18 +69,128 @@ We appreciate the contributions of the authors of the closely related studies li
 
 **Multi-class, single-modal**
 
-- You et al. (2022), **[A Unified Model for Multi-class Anomaly Detection (UniAD)](https://proceedings.neurips.cc/paper_files/paper/2022/hash/1d774c112926348c3e25ea47d87c835b-Abstract-Conference.html)** (NeurIPS, [code](https://github.com/zhiyuanyou/UniAD)). UniAD pioneered unified multi-class feature reconstruction and highlighted the *identical shortcut* problem.
-- He et al. (2024), **[MambaAD: Exploring State Space Models for Multi-class Unsupervised Anomaly Detection](https://proceedings.neurips.cc/paper_files/paper/2024/hash/833b21da1956c6b92f6df253bf655cf5-Abstract-Conference.html)** (NeurIPS, [code](https://github.com/lewandofskee/MambaAD)). MambaAD uses state-space scans and multi-kernel convolutions to model global and local structure in single-modal feature reconstruction. ECFR also models spatial structure, and uses cross-modal reconstruction to exploit RGB–depth heterogeneity against the *identical shortcut*.
+- You et al. (2022), **[A Unified Model for Multi-class Anomaly Detection (UniAD)](https://proceedings.neurips.cc/paper_files/paper/2022/hash/1d774c112926348c3e25ea47d87c835b-Abstract-Conference.html)** (NeurIPS, [code](https://github.com/zhiyuanyou/UniAD)).
+
+  <details>
+  <summary>BibTeX</summary>
+
+  ```bibtex
+  @inproceedings{you2022unified,
+    title = {A Unified Model for Multi-class Anomaly Detection},
+    author = {You, Zhiyuan and Cui, Lei and Shen, Yujun and Yang, Kai and Lu, Xin and Zheng, Yu and Le, Xinyi},
+    booktitle = {Advances in Neural Information Processing Systems},
+    volume = {35},
+    pages = {4571--4584},
+    year = {2022}
+  }
+  ```
+
+  </details>
+
+  UniAD pioneered unified multi-class feature reconstruction and highlighted the *identical shortcut* problem.
+
+- He et al. (2024), **[MambaAD: Exploring State Space Models for Multi-class Unsupervised Anomaly Detection](https://proceedings.neurips.cc/paper_files/paper/2024/hash/833b21da1956c6b92f6df253bf655cf5-Abstract-Conference.html)** (NeurIPS, [code](https://github.com/lewandofskee/MambaAD)).
+
+  <details>
+  <summary>BibTeX</summary>
+
+  ```bibtex
+  @inproceedings{he2024mambaad,
+    title = {MambaAD: Exploring State Space Models for Multi-class Unsupervised Anomaly Detection},
+    author = {He, Haoyang and Bai, Yuhu and Zhang, Jiangning and He, Qingdong and Chen, Hongxu and Gan, Zhenye and Wang, Chengjie and Li, Xiangtai and Tian, Guanzhong and Xie, Lei},
+    booktitle = {Advances in Neural Information Processing Systems},
+    volume = {37},
+    pages = {71162--71187},
+    year = {2024}
+  }
+  ```
+
+  </details>
+
+  MambaAD uses state-space scans and multi-kernel convolutions to model global and local structure in single-modal feature reconstruction. ECFR also models spatial structure, and uses cross-modal reconstruction to exploit RGB–depth heterogeneity against the *identical shortcut*.
+
 
 **Single-class, multimodal**
 
-- Wang et al. (2023), **[Multimodal Industrial Anomaly Detection via Hybrid Fusion (M3DM)](https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Multimodal_Industrial_Anomaly_Detection_via_Hybrid_Fusion_CVPR_2023_paper.html)** (CVPR, [code](https://github.com/wynoxos/M3DM)). M3DM fuses RGB and 3D features and stores normal features in multiple memory banks. ECFR learns cross-modal feature reconstruction without a memory bank.
-- Costanzino et al. (2024), **[Multimodal Industrial Anomaly Detection by Crossmodal Feature Mapping (CFM)](https://openaccess.thecvf.com/content/CVPR2024/html/Costanzino_Multimodal_Industrial_Anomaly_Detection_by_Crossmodal_Feature_Mapping_CVPR_2024_paper.html)** (CVPR, [code](https://github.com/CVLAB-Unibo/crossmodal-feature-mapping)). CFM maps contextualized features independently at each spatial location. ECFR learns spatial structure through global and local modeling during cross-modal feature reconstruction across categories.
-- Tao et al. (2025), **[G2SF: Geometry-Guided Score Fusion for Multimodal Industrial Anomaly Detection](https://openaccess.thecvf.com/content/ICCV2025/html/Tao_G2SF_Geometry-Guided_Score_Fusion_for_Multimodal_Industrial_Anomaly_Detection_ICCV_2025_paper.html)** (ICCV, [code](https://github.com/ctaoaa/G2SF)). G2SF learns a geometry-guided metric to fuse modality-specific memory-bank scores. ECFR scores cross-modal reconstruction discrepancies directly.
+- Wang et al. (2023), **[Multimodal Industrial Anomaly Detection via Hybrid Fusion (M3DM)](https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Multimodal_Industrial_Anomaly_Detection_via_Hybrid_Fusion_CVPR_2023_paper.html)** (CVPR, [code](https://github.com/wynoxos/M3DM)).
+
+  <details>
+  <summary>BibTeX</summary>
+
+  ```bibtex
+  @inproceedings{wang2023multimodal,
+    title = {Multimodal Industrial Anomaly Detection via Hybrid Fusion},
+    author = {Wang, Yue and Peng, Jinlong and Zhang, Jiangning and Yi, Ran and Wang, Yabiao and Wang, Chengjie},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    pages = {8032--8041},
+    year = {2023}
+  }
+  ```
+
+  </details>
+
+  M3DM fuses RGB and 3D features and stores normal features in multiple memory banks. ECFR learns cross-modal feature reconstruction without a memory bank.
+
+- Costanzino et al. (2024), **[Multimodal Industrial Anomaly Detection by Crossmodal Feature Mapping (CFM)](https://openaccess.thecvf.com/content/CVPR2024/html/Costanzino_Multimodal_Industrial_Anomaly_Detection_by_Crossmodal_Feature_Mapping_CVPR_2024_paper.html)** (CVPR, [code](https://github.com/CVLAB-Unibo/crossmodal-feature-mapping)).
+
+  <details>
+  <summary>BibTeX</summary>
+
+  ```bibtex
+  @inproceedings{costanzino2024cross,
+    title = {Multimodal Industrial Anomaly Detection by Crossmodal Feature Mapping},
+    author = {Costanzino, Alex and Zama Ramirez, Pierluigi and Lisanti, Giuseppe and Di Stefano, Luigi},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    pages = {17234--17243},
+    year = {2024}
+  }
+  ```
+
+  </details>
+
+  CFM maps contextualized features independently at each spatial location. ECFR learns spatial structure through global and local modeling during cross-modal feature reconstruction across categories.
+
+- Tao et al. (2025), **[G2SF: Geometry-Guided Score Fusion for Multimodal Industrial Anomaly Detection](https://openaccess.thecvf.com/content/ICCV2025/html/Tao_G2SF_Geometry-Guided_Score_Fusion_for_Multimodal_Industrial_Anomaly_Detection_ICCV_2025_paper.html)** (ICCV, [code](https://github.com/ctaoaa/G2SF)).
+
+  <details>
+  <summary>BibTeX</summary>
+
+  ```bibtex
+  @inproceedings{tao2025g2sf,
+    title = {G2SF: Geometry-Guided Score Fusion for Multimodal Industrial Anomaly Detection},
+    author = {Tao, Chengyu and Cao, Xuanming and Du, Juan},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    pages = {20551--20560},
+    year = {2025}
+  }
+  ```
+
+  </details>
+
+  G2SF learns a geometry-guided metric to fuse modality-specific memory-bank scores. ECFR scores cross-modal reconstruction discrepancies directly.
+
 
 **Multi-class, multimodal**
 
-- Zhao et al. (2026), **[UniMMAD: Unified Multi-Modal and Multi-Class Anomaly Detection via MoE-Driven Feature Decompression](https://openaccess.thecvf.com/content/CVPR2026/papers/Zhao_UniMMAD_Unified_Multi-Modal_and_Multi-Class_Anomaly_Detection_via_MoE-Driven_Feature_CVPR_2026_paper.pdf)** (CVPR, [code](https://github.com/yuanzhao-CVLAB/UniMMAD)). UniMMAD uses a mixture of experts to decompress shared features into modality- and class-specific representations. ECFR uses two interacting pathways for cross-modal feature reconstruction.
+- Zhao et al. (2026), **[UniMMAD: Unified Multi-Modal and Multi-Class Anomaly Detection via MoE-Driven Feature Decompression](https://openaccess.thecvf.com/content/CVPR2026/papers/Zhao_UniMMAD_Unified_Multi-Modal_and_Multi-Class_Anomaly_Detection_via_MoE-Driven_Feature_CVPR_2026_paper.pdf)** (CVPR, [code](https://github.com/yuanzhao-CVLAB/UniMMAD)).
+
+  <details>
+  <summary>BibTeX</summary>
+
+  ```bibtex
+  @inproceedings{zhao2026unimmad,
+    title = {UniMMAD: Unified Multi-Modal and Multi-Class Anomaly Detection via MoE-Driven Feature Decompression},
+    author = {Zhao, Yuan and Pang, Youwei and Zhang, Lihe and Liu, Hanqi and Zuo, Jiaming and Lu, Huchuan and Zhao, Xiaoqi},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    pages = {28502--28511},
+    year = {2026}
+  }
+  ```
+
+  </details>
+
+  UniMMAD uses a mixture of experts to decompress shared features into modality- and class-specific representations. ECFR uses two interacting pathways for cross-modal feature reconstruction.
+
 
 ECFR’s cross-modal feature reconstruction connects cross-modal correspondence learning with spatially structured reconstruction for multi-class anomaly detection. It further exploits modality heterogeneity to help mitigate the *identical shortcut*.
 
@@ -152,9 +262,9 @@ For questions, please send an email to [120242227180@ncepu.edu.cn](mailto:120242
 
 ## Acknowledgements
 
-We thank all of the reviewers for their constructive comments and the Area Chair for helpful guidance during the review of our submission. Both helped us improve the paper.
+We thank all of the reviewers for their constructive comments and the Area Chair for helpful guidance during the review of our submission. Their feedback helped us improve the paper.
 
-We appreciate the following GitHub repositories for their valuable code:
+We appreciate the following GitHub repositories for their valuable codes:
 
 - [UniAD](https://github.com/zhiyuanyou/UniAD)
 - [MambaAD](https://github.com/lewandofskee/MambaAD)
