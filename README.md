@@ -70,7 +70,7 @@ We appreciate the contributions of the authors of the closely related studies li
 **Multi-class, single-modal**
 
 <details>
-<summary>You et al. (2022), <strong>A Unified Model for Multi-class Anomaly Detection (UniAD)</strong> (<a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/1d774c112926348c3e25ea47d87c835b-Abstract-Conference.html">NeurIPS</a>, <a href="https://github.com/zhiyuanyou/UniAD">code</a>). <strong>[BibTeX]</strong></summary>
+<summary>You et al. (2022), <strong>A Unified Model for Multi-class Anomaly Detection (UniAD)</strong> (<a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/1d774c112926348c3e25ea47d87c835b-Abstract-Conference.html">NeurIPS</a>, <a href="https://github.com/zhiyuanyou/UniAD">code</a>). </summary>
 
 ```bibtex
 @inproceedings{you2022unified,
@@ -88,7 +88,7 @@ We appreciate the contributions of the authors of the closely related studies li
 UniAD pioneered unified multi-class feature reconstruction and highlighted the *identical shortcut* problem.
 
 <details>
-<summary>He et al. (2024), <strong>MambaAD: Exploring State Space Models for Multi-class Unsupervised Anomaly Detection</strong> (<a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/833b21da1956c6b92f6df253bf655cf5-Abstract-Conference.html">NeurIPS</a>, <a href="https://github.com/lewandofskee/MambaAD">code</a>). <strong>[BibTeX]</strong></summary>
+<summary>He et al. (2024), <strong>MambaAD: Exploring State Space Models for Multi-class Unsupervised Anomaly Detection</strong> (<a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/833b21da1956c6b92f6df253bf655cf5-Abstract-Conference.html">NeurIPS</a>, <a href="https://github.com/lewandofskee/MambaAD">code</a>). </summary>
 
 ```bibtex
 @inproceedings{he2024mambaad,
@@ -108,7 +108,7 @@ MambaAD uses state-space scans and multi-kernel convolutions to model global and
 **Single-class, multimodal**
 
 <details>
-<summary>Wang et al. (2023), <strong>Multimodal Industrial Anomaly Detection via Hybrid Fusion (M3DM)</strong> (<a href="https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Multimodal_Industrial_Anomaly_Detection_via_Hybrid_Fusion_CVPR_2023_paper.html">CVPR</a>, <a href="https://github.com/wynoxos/M3DM">code</a>). <strong>[BibTeX]</strong></summary>
+<summary>Wang et al. (2023), <strong>Multimodal Industrial Anomaly Detection via Hybrid Fusion (M3DM)</strong> (<a href="https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Multimodal_Industrial_Anomaly_Detection_via_Hybrid_Fusion_CVPR_2023_paper.html">CVPR</a>, <a href="https://github.com/wynoxos/M3DM">code</a>). </summary>
 
 
 ```bibtex
@@ -126,7 +126,7 @@ MambaAD uses state-space scans and multi-kernel convolutions to model global and
 M3DM fuses RGB and 3D features and stores normal features in multiple memory banks. ECFR learns cross-modal feature reconstruction without a memory bank.
 
 <details>
-<summary>Costanzino et al. (2024), <strong>Multimodal Industrial Anomaly Detection by Crossmodal Feature Mapping (CFM)</strong> (<a href="https://openaccess.thecvf.com/content/CVPR2024/html/Costanzino_Multimodal_Industrial_Anomaly_Detection_by_Crossmodal_Feature_Mapping_CVPR_2024_paper.html">CVPR</a>, <a href="https://github.com/CVLAB-Unibo/crossmodal-feature-mapping">code</a>). <strong>[BibTeX]</strong></summary>
+<summary>Costanzino et al. (2024), <strong>Multimodal Industrial Anomaly Detection by Crossmodal Feature Mapping (CFM)</strong> (<a href="https://openaccess.thecvf.com/content/CVPR2024/html/Costanzino_Multimodal_Industrial_Anomaly_Detection_by_Crossmodal_Feature_Mapping_CVPR_2024_paper.html">CVPR</a>, <a href="https://github.com/CVLAB-Unibo/crossmodal-feature-mapping">code</a>). </summary>
 
 ```bibtex
 @inproceedings{costanzino2024cross,
@@ -143,7 +143,7 @@ M3DM fuses RGB and 3D features and stores normal features in multiple memory ban
 CFM maps contextualized features independently at each spatial location. ECFR learns spatial structure through global and local modeling during cross-modal feature reconstruction across categories.
 
 <details>
-<summary>Tao et al. (2025), <strong>G2SF: Geometry-Guided Score Fusion for Multimodal Industrial Anomaly Detection</strong> (<a href="https://openaccess.thecvf.com/content/ICCV2025/html/Tao_G2SF_Geometry-Guided_Score_Fusion_for_Multimodal_Industrial_Anomaly_Detection_ICCV_2025_paper.html">ICCV</a>, <a href="https://github.com/ctaoaa/G2SF">code</a>). <strong>[BibTeX]</strong></summary>
+<summary>Tao et al. (2025), <strong>G2SF: Geometry-Guided Score Fusion for Multimodal Industrial Anomaly Detection</strong> (<a href="https://openaccess.thecvf.com/content/ICCV2025/html/Tao_G2SF_Geometry-Guided_Score_Fusion_for_Multimodal_Industrial_Anomaly_Detection_ICCV_2025_paper.html">ICCV</a>, <a href="https://github.com/ctaoaa/G2SF">code</a>). </summary>
 
 ```bibtex
 @inproceedings{tao2025g2sf,
@@ -162,7 +162,7 @@ G2SF learns a geometry-guided metric to fuse modality-specific memory-bank score
 **Multi-class, multimodal**
 
 <details>
-<summary>Zhao et al. (2026), <strong>UniMMAD: Unified Multi-Modal and Multi-Class Anomaly Detection via MoE-Driven Feature Decompression</strong> (<a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Zhao_UniMMAD_Unified_Multi-Modal_and_Multi-Class_Anomaly_Detection_via_MoE-Driven_Feature_CVPR_2026_paper.pdf">CVPR</a>, <a href="https://github.com/yuanzhao-CVLAB/UniMMAD">code</a>). <strong>[BibTeX]</strong></summary>
+<summary>Zhao et al. (2026), <strong>UniMMAD: Unified Multi-Modal and Multi-Class Anomaly Detection via MoE-Driven Feature Decompression</strong> (<a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Zhao_UniMMAD_Unified_Multi-Modal_and_Multi-Class_Anomaly_Detection_via_MoE-Driven_Feature_CVPR_2026_paper.pdf">CVPR</a>, <a href="https://github.com/yuanzhao-CVLAB/UniMMAD">code</a>). </summary>
 
 ```bibtex
 @inproceedings{zhao2026unimmad,
