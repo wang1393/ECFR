@@ -67,7 +67,7 @@ As shown in the figure below, ECFR implements this idea through two interacting 
 
 We appreciate the contributions of the authors of the closely related studies listed below. The studies are grouped by their original training settings: single-class methods train a separate model for each category, while multi-class methods use one model across categories.
 
-## <sub>Multi-class, single-modal</sub>
+### Multi-class, single-modal
 <hr>
 
 <details>
@@ -106,7 +106,7 @@ UniAD pioneered unified multi-class feature reconstruction and highlighted the *
 
 MambaAD uses state-space scans and multi-kernel convolutions to model global and local structure in single-modal feature reconstruction. ECFR also models spatial structure, and uses cross-modal reconstruction to exploit RGB–depth heterogeneity against the *identical shortcut*.
 
-**Single-class, multimodal**
+### Single-class, multimodal
 <hr>
 
 <details>
@@ -161,7 +161,7 @@ CFM maps contextualized features independently at each spatial location. ECFR le
 
 G2SF learns a geometry-guided metric to fuse modality-specific memory-bank scores. ECFR scores cross-modal reconstruction discrepancies directly.
 
-**Multi-class, multimodal**
+### Multi-class, multimodal
 <hr>
 
 <details>
