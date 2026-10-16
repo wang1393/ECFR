@@ -109,6 +109,8 @@ MambaAD uses state-space scans and multi-kernel convolutions to model global and
 
 **Single-class, multimodal**
 
+<hr>
+
 <details>
 <summary>Wang et al. (2023), <strong>Multimodal Industrial Anomaly Detection via Hybrid Fusion (M3DM)</strong> (<a href="https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Multimodal_Industrial_Anomaly_Detection_via_Hybrid_Fusion_CVPR_2023_paper.html">CVPR</a>, <a href="https://github.com/wynoxos/M3DM">code</a>). </summary>
 
@@ -162,6 +164,8 @@ CFM maps contextualized features independently at each spatial location. ECFR le
 G2SF learns a geometry-guided metric to fuse modality-specific memory-bank scores. ECFR scores cross-modal reconstruction discrepancies directly.
 
 **Multi-class, multimodal**
+
+<hr>
 
 <details>
 <summary>Zhao et al. (2026), <strong>UniMMAD: Unified Multi-Modal and Multi-Class Anomaly Detection via MoE-Driven Feature Decompression</strong> (<a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Zhao_UniMMAD_Unified_Multi-Modal_and_Multi-Class_Anomaly_Detection_via_MoE-Driven_Feature_CVPR_2026_paper.pdf">CVPR</a>, <a href="https://github.com/yuanzhao-CVLAB/UniMMAD">code</a>). </summary>
