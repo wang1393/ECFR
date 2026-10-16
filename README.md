@@ -67,7 +67,7 @@ As shown in the figure below, ECFR implements this idea through two interacting 
 
 We appreciate the contributions of the authors of the closely related studies listed below. The studies are grouped by their original training settings: single-class methods train a separate model for each category, while multi-class methods use one model across categories.
 
-**Multi-class, single-modal**
+## <sub>Multi-class, single-modal</sub>
 <hr>
 
 <details>
