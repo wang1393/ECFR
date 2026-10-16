@@ -67,8 +67,7 @@ As shown in the figure below, ECFR implements this idea through two interacting 
 
 We appreciate the contributions of the authors of the closely related studies listed below. The studies are grouped by their original training settings: single-class methods train a separate model for each category, while multi-class methods use one model across categories.
 
-### Multi-class, single-modal
-<hr>
+## <sub>Multi-class, single-modal</sub>
 
 <details>
 <summary>You et al. (2022), <strong>A Unified Model for Multi-class Anomaly Detection (UniAD)</strong> (<a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/1d774c112926348c3e25ea47d87c835b-Abstract-Conference.html">NeurIPS</a>, <a href="https://github.com/zhiyuanyou/UniAD">code</a>). </summary>
@@ -106,8 +105,7 @@ UniAD pioneered unified multi-class feature reconstruction and highlighted the *
 
 MambaAD uses state-space scans and multi-kernel convolutions to model global and local structure in single-modal feature reconstruction. ECFR also models spatial structure, and uses cross-modal reconstruction to exploit RGB–depth heterogeneity against the *identical shortcut*.
 
-### Single-class, multimodal
-<hr>
+## <sub>Single-class, multimodal</sub>
 
 <details>
 <summary>Wang et al. (2023), <strong>Multimodal Industrial Anomaly Detection via Hybrid Fusion (M3DM)</strong> (<a href="https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Multimodal_Industrial_Anomaly_Detection_via_Hybrid_Fusion_CVPR_2023_paper.html">CVPR</a>, <a href="https://github.com/wynoxos/M3DM">code</a>). </summary>
@@ -161,8 +159,7 @@ CFM maps contextualized features independently at each spatial location. ECFR le
 
 G2SF learns a geometry-guided metric to fuse modality-specific memory-bank scores. ECFR scores cross-modal reconstruction discrepancies directly.
 
-### Multi-class, multimodal
-<hr>
+## <sub>Multi-class, multimodal</sub>
 
 <details>
 <summary>Zhao et al. (2026), <strong>UniMMAD: Unified Multi-Modal and Multi-Class Anomaly Detection via MoE-Driven Feature Decompression</strong> (<a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Zhao_UniMMAD_Unified_Multi-Modal_and_Multi-Class_Anomaly_Detection_via_MoE-Driven_Feature_CVPR_2026_paper.pdf">CVPR</a>, <a href="https://github.com/yuanzhao-CVLAB/UniMMAD">code</a>). </summary>
