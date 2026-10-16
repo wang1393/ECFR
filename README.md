@@ -68,7 +68,8 @@ As shown in the figure below, ECFR implements this idea through two interacting 
 We appreciate the contributions of the authors of the closely related studies listed below. The studies are grouped by their original training settings: single-class methods train a separate model for each category, while multi-class methods use one model across categories.
 
 **Multi-class, single-modal**
----
+
+<hr>
 
 <details>
 <summary>You et al. (2022), <strong>A Unified Model for Multi-class Anomaly Detection (UniAD)</strong> (<a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/1d774c112926348c3e25ea47d87c835b-Abstract-Conference.html">NeurIPS</a>, <a href="https://github.com/zhiyuanyou/UniAD">code</a>). </summary>
