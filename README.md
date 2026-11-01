@@ -16,6 +16,8 @@ Official implementation of **An Efficient Cross-modal Feature Reconstruction Mod
 
 ## Overview
 
+![Overall framework of ECFR](figures/ecfr_framework.png)
+
 A major challenge in popular reconstruction networks is the “identical shortcut” problem, where anomalous samples can also be well reconstructed, hindering the discrimination between normal and abnormal data. This challenge is further exacerbated in multi-class settings, as category diversity compels the model to develop stronger reconstruction capacity to capture more complex normal patterns, which may inadvertently allow abnormal samples to be well reconstructed as well. Meanwhile, compared to single-modal reconstruction, cross-modal reconstruction is more challenging due to the inter-modal heterogeneity and typically yields larger reconstruction errors. In this research, we argue **the difficulty of cross-modal reconstruction is not an impediment, but a blessing in disguise**: it naturally suppresses the identical shortcut and enhances anomaly detectability. Specifically, we establish two statistical inequalities that formalize our core hypotheses: cross-modal heterogeneity inherently mitigates the identical shortcut (Inequality 1) and amplifies anomaly detectability (Inequality 2).
 
 **Inequality 1 (Cross-modal Difficulty)**
@@ -56,7 +58,6 @@ $$
 \right].
 $$
 
-![Overall framework of ECFR](figures/ecfr_framework.png)
 
 
 ## Closely Related Work
