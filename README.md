@@ -18,9 +18,9 @@ Official implementation of **An Efficient Cross-modal Feature Reconstruction Mod
 
 ## Overview
 
-In multi-class anomaly detection, a single model must learn normal patterns across multiple object categories. Yet greater reconstruction capacity can also allow anomalies to be reconstructed successfully. This is the *identical shortcut* problem. **Modality differences make cross-modal reconstruction more difficult. Can this difficulty help alleviate the identical shortcut?** Motivated by this question, ECFR explores how to exploit the inherent difficulty of cross-modal reconstruction to make anomalies harder to reconstruct while learning normal patterns across categories.
+A major challenge in popular reconstruction networks is the “identical shortcut” problem, where anomalous samples can also be well reconstructed, hindering the discrimination between normal and abnormal data. This challenge is further exacerbated in multi-class settings, as category diversity compels the model to develop stronger reconstruction capacity to capture more complex normal patterns, which may inadvertently allow abnormal samples to be well reconstructed as well. Meanwhile, compared to single-modal reconstruction, cross-modal reconstruction is more challenging due to the inter-modal heterogeneity and typically yields larger reconstruction errors. In this research, we argue **the difficulty of cross-modal reconstruction is not an impediment, but a blessing in disguise**: it naturally suppresses the identical shortcut and enhances anomaly detectability. Specifically, we establish two statistical inequalities that formalize our core hypotheses: cross-modal heterogeneity inherently mitigates the identical shortcut (Inequality 1) and amplifies anomaly detectability (Inequality 2).
 
-This idea rests on two hypotheses. First, modality heterogeneity introduces an additional cost when reconstructing one modality from another. Second, when the model learns this process from normal data alone, anomalous inputs may further increase reconstruction errors. We express these hypotheses through two inequalities and test them empirically in the appendix:
+**Inequality 1 (Cross-modal Difficulty)**
 
 $$
 \mathbb{E}_{\mathcal{P}_{\mathrm{norm}}}
@@ -39,6 +39,8 @@ $$
 +\Delta_{\mathrm{hetero}},
 $$
 
+**Inequality 2 (Anomaly Amplification)**
+
 $$
 \mathbb{E}_{\mathcal{P}_{\mathrm{anom}}}
 \left[
@@ -55,10 +57,6 @@ $$
 \right\rVert_{2}^{2}
 \right].
 $$
-
-Here, $x^m$ and $x^{\bar m}$ are paired inputs from two modalities. $F_{\mathrm{cross}}/F_{\mathrm{single}}$ denote cross-modal/same-modal reconstruction. $\Delta_{\mathrm{hetero}}>0$ captures the heterogeneity cost, and $\kappa>1$ characterizes the amplification of reconstruction errors on anomalous samples relative to normal samples.
-
-As shown in the figure below, ECFR implements this idea through two interacting cross-modal reconstruction pathways. **AFIR** learns intra-modal and inter-modal dependencies from normal samples. These interactions provide a route for anomaly signals to propagate between the pathways. **HAC** jointly models global and local structure, allowing propagated deviations to produce more pronounced reconstruction errors.
 
 ![Overall framework of ECFR](figures/ecfr_framework.png)
 
@@ -244,14 +242,10 @@ Official BibTeX: pending publication.
 
 ## Contacts
 
-For questions, please send an email to [120242227180@ncepu.edu.cn](mailto:120242227180@ncepu.edu.cn).
+For questions, please send an email to [17325527132@163.com](mailto:17325527132@163.com).
 
 ## Acknowledgements
 
-We thank all of the reviewers for their constructive comments and the Area Chair for helpful guidance during the review of our submission. Their feedback helped us improve the paper.
+We sincerely thank all reviewers and the Area Chair for their constructive comments during the review of our submission. Their feedback helped strengthen this work.
 
-We appreciate the following GitHub repositories for their valuable codes:
-
-- [UniAD](https://github.com/zhiyuanyou/UniAD)
-- [MambaAD](https://github.com/lewandofskee/MambaAD)
-- [ADer](https://github.com/zhangzjn/ADer#train-multi-class-unsupervised-ad-setting-by-default-muad)
+We appreciate the following GitHub repositories for their valuable code: [UniAD](https://github.com/zhiyuanyou/UniAD), [MambaAD](https://github.com/lewandofskee/MambaAD), and [ADer](https://github.com/zhangzjn/ADer).
