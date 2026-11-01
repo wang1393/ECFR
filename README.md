@@ -1,7 +1,5 @@
 # ECFR: An Efficient Cross-modal Feature Reconstruction Model for Multimodal Multi-class Anomaly Detection
 
-**Zhenghan Wang · Zhihui Luo · Haitao Hu · Wengang Cheng**
-
 Official implementation of **An Efficient Cross-modal Feature Reconstruction Model for Multimodal Multi-class Anomaly Detection**, accepted at **NeurIPS 2026**.
 
 ## Contents
