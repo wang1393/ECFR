@@ -57,7 +57,7 @@ $$
 \right].
 $$
 
-Here, $\mathbf{x}^{m}$ and $\mathbf{x}^{\bar{m}}$ denote paired modal inputs, while $\mathcal{F}_{\mathrm{cross}}$ and $\mathcal{F}_{\mathrm{single}}$ represent cross-modal and single-modal reconstruction. $\Delta_{\mathrm{hetero}}>0$ measures the heterogeneity cost, and $\kappa>1$ indicates the anomaly amplification factor.
+Here, $`\mathbf{x}^{m}`$ and $`\mathbf{x}^{\bar m}`$ denote paired modal inputs, while $`\mathcal{F}_{\mathrm{cross}}`$ and $`\mathcal{F}_{\mathrm{single}}`$ represent cross-modal and single-modal reconstruction. $`\Delta_{\mathrm{hetero}}>0`$ measures the heterogeneity cost, and $`\kappa>1`$ indicates the anomaly amplification factor.
 
 Guided by these inequalities, ECFR performs bidirectional cross-modal feature reconstruction between RGB and depth modalities. To learn diverse normal patterns while exploiting the inherent difficulty of cross-modal reconstruction, we design two core modules. **AFIR** models intra-modal dependencies and inter-modal correlations to facilitate normal feature reconstruction while enabling anomalous signals to propagate across modalities. **HAC** combines global attention with local convolutions to capture normal spatial structures, allowing propagated anomalies to induce larger reconstruction errors. Multi-scale reconstruction discrepancies are then used for anomaly detection and localization.
 
