@@ -16,7 +16,6 @@ Official implementation of **An Efficient Cross-modal Feature Reconstruction Mod
 
 ## Overview
 
-![Overall framework of ECFR](figures/ecfr_framework.png)
 
 A major challenge in popular reconstruction networks is the “identical shortcut” problem, where anomalous samples can also be well reconstructed, hindering the discrimination between normal and abnormal data. This challenge is further exacerbated in multi-class settings, as category diversity compels the model to develop stronger reconstruction capacity to capture more complex normal patterns, which may inadvertently allow abnormal samples to be well reconstructed as well. Meanwhile, compared to single-modal reconstruction, cross-modal reconstruction is more challenging due to the inter-modal heterogeneity and typically yields larger reconstruction errors. In this research, we argue **the difficulty of cross-modal reconstruction is not an impediment, but a blessing in disguise**: it naturally suppresses the identical shortcut and enhances anomaly detectability. Specifically, we establish two statistical inequalities that formalize our core hypotheses: cross-modal heterogeneity inherently mitigates the identical shortcut (Inequality 1) and amplifies anomaly detectability (Inequality 2).
 
@@ -58,6 +57,11 @@ $$
 \right].
 $$
 
+Here, $\mathbf{x}^{m}$ and $\mathbf{x}^{\bar m}$ denote paired modal inputs, while $\mathcal{F}_{\mathrm{cross}}$ and $\mathcal{F}_{\mathrm{single}}$ represent cross-modal and single-modal reconstruction. $\Delta_{\mathrm{hetero}}>0$ measures the heterogeneity cost, and $\kappa>1$ indicates the anomaly amplification factor.
+
+Guided by these inequalities, ECFR performs bidirectional cross-modal feature reconstruction between RGB and depth modalities. To learn diverse normal patterns while exploiting the inherent difficulty of cross-modal reconstruction, we design two core modules. **AFIR** models intra-modal dependencies and inter-modal correlations to facilitate normal feature reconstruction while enabling anomalous signals to propagate across modalities. **HAC** combines global attention with local convolutions to capture normal spatial structures, allowing propagated anomalies to induce larger reconstruction errors. Multi-scale reconstruction discrepancies are then used for anomaly detection and localization.
+
+![Overall framework of ECFR](figures/ecfr_framework.png)
 
 
 ## Closely Related Work
@@ -245,6 +249,6 @@ For questions, please send an email to [17325527132@163.com](mailto:17325527132@
 
 ## Acknowledgements
 
-We sincerely thank all reviewers and the Area Chair for their constructive comments during the review of our submission. Their feedback helped strengthen this work.
+We sincerely thank all the Area Chairs and the Reviewers for their constructive comments during the review process. These efforts have significantly strengthened our work.
 
-We appreciate the following GitHub repositories for their valuable code: [UniAD](https://github.com/zhiyuanyou/UniAD), [MambaAD](https://github.com/lewandofskee/MambaAD), and [ADer](https://github.com/zhangzjn/ADer).
+We appreciate the following GitHub repositories for their valuable codes: [UniAD](https://github.com/zhiyuanyou/UniAD), [MambaAD](https://github.com/lewandofskee/MambaAD), and [ADer](https://github.com/zhangzjn/ADer).
